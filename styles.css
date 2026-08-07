@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vh;
+    box-sizing: border-box;
+    border: 1px solid rgb(80 80 80 / 0.5);
+}
+
+.cell {
+    box-sizing: border-box;
+    flex: 0 0 calc(100% / 16);
+    aspect-ratio: 1;
+    background-color: rgb(211 211 211 / 0.75);
+}
