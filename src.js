@@ -15,5 +15,17 @@ const totalCells = gridSize * gridSize;
 for (let i = 0; i < totalCells; i++) {
     const cell = document.createElement("div");
     cell.classList.add("cell");
+
+    // add the event listeners while each cell is being created
+    // one for mouseenter and one for mouse leave
+    // when the mouse enters a cell its background color will change
+    cell.addEventListener("mouseenter", () => {
+        cell.classList.add("hovered");
+    });
+
+    cell.addEventListener("mouseleave", () => {
+        cell.classList.remove("hovered");
+    });
+    
     grid.appendChild(cell);
 }

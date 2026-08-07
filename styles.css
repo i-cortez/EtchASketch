@@ -18,5 +18,8 @@ body {
     box-sizing: border-box;
     flex: 0 0 calc(100% / 16);
     aspect-ratio: 1;
-    background-color: rgb(211 211 211 / 0.75);
+}
+
+.cell.hovered {
+    background-color: rgb(211 211 211 / 0.6);
 }
